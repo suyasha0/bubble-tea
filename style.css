@@ -1,0 +1,19 @@
+.leaf {
+	width: 174px;
+	height: 205px;
+	display: inline-block;
+	position: fixed;
+	top: 100px;
+	left: 100px;
+	background-image: url("leaf.png");
+}
+
+.leaf2 {
+	width: 231px;
+	height: 248px;
+	display: inline-block;
+	position: fixed;
+	top: 100px;
+	left: 100px;
+	background-image: url("leaf2.png");
+}
