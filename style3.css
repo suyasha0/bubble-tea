@@ -1,0 +1,65 @@
+#water {
+	position: fixed;
+    top: 0;
+    left: 0;
+	min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    background-image: url("assets/water.jpg");
+    opacity: .1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.gradient { 
+    background: rgba(128, 26, 8, .9);
+	position: fixed;
+	min-height: 100%;
+    min-width: 100%;
+    margin-left: 0%;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    z-index: -1;
+    animation: 10s ease 2s normal forwards 1 running lighten;
+}
+
+@keyframes lighten {
+    0% { background:  rgba(128, 26, 8, .9); }
+    10% { background: rgba(226,170,135, .6); }
+    100% { background: #d78858; }
+}
+
+.wood {
+    display: inline-block;
+    background: url("https://openclipart.org/download/269713/wg-25.svg");
+    transform: rotate3d(0, 1, .5, 3.142rad);
+    position: fixed;
+    min-height: 150%;
+    min-width: 100%;
+    margin-left: 0%;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: -5;
+}
+
+.tea {
+    position: fixed;
+    background: url("assets/tea2.png");
+    width: 500px;
+    height: 379px;
+    left: 20%;
+    z-index: 5;
+    animation: .2s linear 0s normal forwards 1 running serve;
+}
+
+@keyframes serve {
+    0% { top: 0%}
+    100% { top: 15% }
+}

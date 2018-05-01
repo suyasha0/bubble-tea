@@ -3,9 +3,8 @@
 	height: 205px;
 	display: inline-block;
 	position: fixed;
-	top: 100px;
-	left: 100px;
-	background-image: url("leaf.png");
+	background-image: url("assets/leaf.png");
+	z-index: -1;
 }
 
 .leaf2 {
@@ -13,7 +12,54 @@
 	height: 248px;
 	display: inline-block;
 	position: fixed;
-	top: 100px;
-	left: 100px;
-	background-image: url("leaf2.png");
+	background-image: url("assets/leaf2.png");
+	z-index: -.5;
+}
+
+.peppermint {
+	width: 404px;
+	height: 292px;
+	display: inline-block;
+	position: fixed;
+	background-image: url("assets/peppermint.png");
+}
+
+.green {
+	width: 180px;
+	height: 214px;
+	display: inline-block;
+	position: fixed;
+	background-image: url("assets/green.png");
+}
+
+.black {
+	width: 210px;
+	height: 126px;
+	display: inline-block;
+	position: fixed;
+	background-image: url("assets/black.png");
+	z-index: -.6;
+}
+
+.black, .green, .leaf2 {
+	animation: dry 15s infinite ease-in;
+}
+
+.peppermint, .leaf {
+	animation: dry 20s infinite ease-in;
+}
+
+@keyframes dry {
+	0% {
+		-webkit-filter: brightness(100%); /* Safari */
+	    filter: brightness(100%);
+	}
+	50% {
+		-webkit-filter: brightness(40%); /* Safari */
+	    filter: brightness(40%);
+	}
+	100% {
+		-webkit-filter: brightness(100%); /* Safari */
+	    filter: brightness(100%);
+	}
 }
